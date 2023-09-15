@@ -88,7 +88,7 @@ STEPS TO CREATE MULTI BRANCH PIPELINE WITH FOLDER:
     ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/f6d7e7c9-b920-4251-ba4f-a0c2be910ea7)
 
 8.	The docker image was created in our server. With that docker image we have to deploy the application into the EKS cluster.
- ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/2194bf78-08d3-4af2-9d94-a8f392efda94)
+![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/192ae264-8ab0-41ca-81d9-2a42c438508e)
 
 9.	For this create a repository in dockerhub account and copy the url or path of that repo and push the local docker image to the dockerhub repository by using these commands 
           docker login
