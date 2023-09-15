@@ -6,14 +6,14 @@ STEPS TO CREATE MULTI BRANCH PIPELINE WITH FOLDER:
         
 2.	Install the Jenkins and its requirements in that instance using Jenkins installation code in Jenkins documentary for centos 7.
 
-sudo yum install wget -y
-sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-yum install fontconfig java-11-openjdk -y
-yum install jenkins -y
-service jenkins start
-systemctl enable jenkins
-service jenkins status
+        sudo yum install wget -y
+        sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+        sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+        yum install fontconfig java-11-openjdk -y
+        yum install jenkins -y
+        service jenkins start
+        systemctl enable jenkins
+        service jenkins status
 
 3.	After execution of the above script, enable the http (8080) port in your Jenkins server security group then login into Jenkins with your ip address like, give your <public_ip:8080> on your browser and give the authentication password, which you can find it in path 
  < /var/jenkins_home/secrets/initialAdminPassword > of Jenkins server give that password and login to the Jenkins webserver.
