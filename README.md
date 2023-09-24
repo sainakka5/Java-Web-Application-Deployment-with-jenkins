@@ -1,5 +1,5 @@
 PROJECT 4 : DevOps CI/CD Pipeline for a Java web application using Jenkins, SonarQube, Docker, and Kubernetes.
-STEPS TO CREATE MULTI BRANCH PIPELINE WITH FOLDER:
+STEPS TO CREATE CI/CD Pipeline for a Java web application using Jenkins :
 1.	Create an EC2 instance in AWS console, I create an instance with name “Jenkins_project”.
   ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/9a6187ea-c3fd-49ea-9450-bb9c78dbdb7e)
 
