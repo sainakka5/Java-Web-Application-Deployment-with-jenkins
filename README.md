@@ -91,11 +91,13 @@ STEPS TO CREATE CI/CD Pipeline for a Java web application using Jenkins :
 ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/192ae264-8ab0-41ca-81d9-2a42c438508e)
 
 9.	For this create a repository in dockerhub account and copy the url or path of that repo and push the local docker image to the dockerhub repository by using these commands 
-          docker login
-          docker tag your-image-name:tag <your-dockerhub-username>/<your-repository-name>:tag 
+
+         docker login
+         docker tag your-image-name:tag <your-dockerhub-username>/<your-repository-name>:tag 
          docker push <your-dockerhub-username>/<your-repository-name>: tag
  Create an eks cluster by give the configuration in one file and run the command  
-         eksctl create cluster -f <filename>
+        
+    eksctl create cluster -f <filename>
 for this we should install eksctl, kubectl, awscli in the server. We can find the script in AWS documentary for these packages.
                         ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/46214ebc-a513-40d5-b1fc-5ba90549d44e)
                        ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/65cfe498-45d8-4e95-be4e-386926c58b3f)
@@ -104,14 +106,16 @@ for this we should install eksctl, kubectl, awscli in the server. We can find th
          ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/4186c4fc-ddc6-44ed-ab6d-39795f63461c)
         ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/c96d233b-2246-4da1-bc0f-97d7a966d153)
                 
-10.	After creation of cluster and nodes deploy the application by create two files deploy.yaml  and service.yaml having the below script in it.
+11.	After creation of cluster and nodes deploy the application by create two files deploy.yaml  and service.yaml having the below script in it.
            ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/fd05eec7-75f8-4dd8-9162-e1bf75490904)
                     
-11.	At the place of image keyword in deploy file give the copied path of the dockerhub repo path and deploy the files with command
-kubectl apply -f deploy.yaml        and         kubectl apply -f service.yaml
-          ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/8c477a3f-fdcc-4fff-8c7d-75a70d4e1435)
+12.	At the place of image keyword in deploy file give the copied path of the dockerhub repo path and deploy the files with command
+ 
+        kubectl apply -f deploy.yaml && kubectl apply -f service.yaml
 
-12.	Pods of nodes and Application was deployed. And we can check by the command “kubectl get all”
+   	  ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/8c477a3f-fdcc-4fff-8c7d-75a70d4e1435)
+
+14.	Pods of nodes and Application was deployed. And we can check by the command “kubectl get all”
               ![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/f61facd8-65b4-4b2a-9448-81b9e252aba5)
 
 We got running status so the application was running successfully in nodes
