@@ -42,7 +42,6 @@ STEPS TO CREATE CI/CD Pipeline for a Java web application using Jenkins :
                               stage('Build ') {
                                   steps {
                                       sh "mvn compile"
-                                      // Add your build steps here
                                   }
                               }
                               
@@ -54,7 +53,6 @@ STEPS TO CREATE CI/CD Pipeline for a Java web application using Jenkins :
                               stage('Deploy') {
                                   steps {
                                       sh 'mvn install'
-                                      // Add your deployment steps here
                                   }
                               }
                       
@@ -78,7 +76,6 @@ STEPS TO CREATE CI/CD Pipeline for a Java web application using Jenkins :
                                       script {
                                           def dockerImageName = 'dockerfile'
                                           def dockerfilePath = '.'
-                                          // Build the Docker image
                                           sh "docker build -t ${dockerImageName} -f ${dockerfilePath}/dockerfile ."
                                       }
                                   }
