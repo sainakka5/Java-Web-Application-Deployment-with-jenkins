@@ -1,3 +1,6 @@
+![image](https://github.com/sainakka5/Java-Web-Application-Deployment-with-jenkins/assets/136338958/aa076d37-bfde-4752-8f57-57462ac2b938)
+
+
 PROJECT 4 : DevOps CI/CD Pipeline for a Java web application using Jenkins, SonarQube, Docker, and Kubernetes.
 STEPS TO CREATE CI/CD Pipeline for a Java web application using Jenkins :
 1.	Create an EC2 instance in AWS console, I create an instance with name “Jenkins_project”.
